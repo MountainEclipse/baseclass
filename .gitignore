@@ -10,7 +10,7 @@ venv/
 resources/
 localdata/
 dist/
-mespe.egg-info/
+baseclass.egg-info/
 **/__pycache__
 **.pyc
 **.txt
