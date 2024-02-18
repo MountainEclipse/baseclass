@@ -1,13 +1,12 @@
 # 12/9/2023 By MountainEclipse
 
 import unittest
-from inspect import Parameter
-from .. import baseclasses
+from _baseclass import *
 
 
 class TestTrackedInstances(unittest.TestCase):
 
-    class Parent(baseclasses.TrackedInstances):
+    class Parent(TrackedInstances):
         pass
 
     class Child(Parent):
@@ -84,7 +83,7 @@ class TestCallPostInit(unittest.TestCase):
         def __post_init__(self, value):
             self.value = value + 1
 
-    class Subclass(Superclass, baseclasses.CallPostInit):
+    class Subclass(Superclass, CallPostInit):
         pass
 
     def test_init_subclass(self):
@@ -105,7 +104,7 @@ class TestCallPostInit(unittest.TestCase):
 
 class TestInstanceArgs(unittest.TestCase):
 
-    class Parent(baseclasses.InstancingArgsTracker):
+    class Parent(InstancingArgsTracker):
         def __init__(self, p1, p2, p3="vp3"):
             pass
     
@@ -223,7 +222,7 @@ class TestInstanceArgs(unittest.TestCase):
 
 class TestEnumDict(unittest.TestCase):
 
-    class ED(baseclasses.EnumDict):
+    class ED(EnumDict):
         KEY1 = "value1"
         KEY2 = "value2"
         KEY3 = "value3"

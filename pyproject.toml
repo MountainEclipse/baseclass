@@ -1,8 +1,8 @@
 [project]
-name = "mespe"
-version = "0.0.2"
-authors = [{name="The Absolute Tinkerer", email="none-provided@none-provided.com"}]
-description = "A simple Publisher-Subscriber Messaging Pipeline"
+name = "baseclass"
+version = "0.0.1"
+authors = [{name="MountainEclilpse", email="none-provided@none-provided.com"}]
+description = "Simple baseclasses with appropriate tests"
 readme = "README.md"
 requires-python = ">3.9.12"
 classifiers = ["Programming Language :: Python :: 3",
@@ -10,8 +10,8 @@ classifiers = ["Programming Language :: Python :: 3",
                "Operating System :: OS Independent"]
 
 [project.urls]
-Homepage = "https://github.com/Absolute-Tinkerer"
-Issues = "https://github.com/Absolute-Tinkerer"
+Homepage = "https://github.com/MountainEclipse"
+Issues = "https://github.com/MountainEclipse"
 
 [build-system]
 requires = ["setuptools>=61.2.0"]
